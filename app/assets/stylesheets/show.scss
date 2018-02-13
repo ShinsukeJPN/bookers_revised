@@ -1,0 +1,44 @@
+.show_title, .show_book {
+	font-family: 'arial black', 'Impact', sans-serif;
+}
+
+.show_title_text, .show_book_text {
+	font-family: sans-serif;
+}
+
+.notice-message {
+	font-size: 15px;
+	color: green;
+	padding-left: 50px;
+}
+
+.show_review_box {
+	margin: 30px 0 0 30px;
+}
+
+.show_title_text {
+	padding-left: 10px;
+}
+
+.show_book {
+	padding-top: 20px;
+}
+
+.show_book_text {
+	padding-left: 10px;
+}
+
+.show_buttons {
+	font-size: 13px;
+	padding-top: 30px;
+	padding-left: 20px;
+}
+
+.show_buttons :hover {
+	background-color: black;
+	color :white;
+}
+
+.show_buttons :visited {
+	color: gray;
+}

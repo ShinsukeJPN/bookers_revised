@@ -1,0 +1,25 @@
+h2, h4 {
+	font-family: 'arial black', 'Impact', sans-serif;
+}
+
+.notice-message {
+	font-size: 15px;
+	color: green;
+}
+
+.editing_box {
+	margin: 30px 0 0 30px;
+}
+
+.edit_buttons {
+	font-size: 13px;
+	padding-top: 20px;
+}
+
+.edit_buttons :hover {
+	background-color: black;
+}
+
+.edit_buttons :visited {
+	color: gray;
+}

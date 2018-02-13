@@ -1,0 +1,12 @@
+<% if flash[:notice] %>
+  <div class="notice_message">
+    <%= flash[:notice] %>
+  </div>
+<% end %>
+
+<div class=show_review_box>
+	<div class=show_title>Title:<span class=show_title_text><%= @review.title %></span></div>
+	<div class=show_book>Book:<span class=show_book_text><%= @review.review %></span></div>
+</div>
+	<div class=show_buttons><%= link_to 'Edit', edit_review_path(@review.id) %> | <span><%= link_to 'Back', reviews_path, method: :get%></span>
+
