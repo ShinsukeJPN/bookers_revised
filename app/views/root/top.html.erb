@@ -1,6 +1,18 @@
 <section class="top_box">
-	<h1>ようこそ Bookers へ！</h1>
-		<p>Bookersでは、さまざまな書籍に関するあなたの意見や<br>
-		印象を共有し交換することができます。</p>
-	<div class="top_button"><%= link_to "start", reviews_path, method: :get %></div>
+ <div class="top_discription">
+	<h1>Welcome to <span class="glyphicon glyphicon-book" aria-hidden="true"></span>Bookers !!</h1>
+	 <p>On <span class="glyphicon glyphicon-book" aria-hidden="true"></span>Bookers, you can share and exchange your opinions , inpressions,<br>
+	 and emotions about varioius books!</p>
+ </div>
+  <div class="row">
+  	<div class="col-lg-2"></div>
+  	<div class="col-lg-8">
+	  	<div class="row">
+	 		<%= link_to "Log in", new_user_session_path, class: "col-lg-12 btn btn-info" %>
+			<%= link_to "Sign up", new_user_registration_path, class: "col-lg-12 btn btn-success" %>
+		</div>
+	</div>
+  	<div class="col-lg-2"></div>
+
+  </div>
 </section>

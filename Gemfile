@@ -3,6 +3,14 @@ source 'https://rubygems.org'
 #日本語化のgem
 gem 'rails-i18n'
 
+gem 'devise'
+
+gem 'bootstrap-sass'
+gem 'jquery-rails'
+
+gem "refile", require: "refile/rails", github: 'manfe/refile'
+gem "refile-mini_magick"
+
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"

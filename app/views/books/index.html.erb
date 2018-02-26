@@ -1,0 +1,26 @@
+<%= render 'users/list', user: @user, book: @book %>
+<div class="col-lg-9">
+ <h2>Books</h2>
+  <div class="container">
+  <table class=table>
+  	 	<thead>
+ 		<tr>
+ 			<th>     </th>
+	 		<th>Title</th>
+ 			<th>Opinion</th>
+ 		</tr>
+ 		</thead>
+		<% @books.each do |b| %>
+ 		<tbody>
+ 			<td><span><%= attachment_image_tag b.user, :image, :fill, 50,50, fallback: "No_img.jpg" %></span></td>
+	 		<td><span><%= link_to b.title, book_path(b.id) %></span></td>
+			<td><span> <%= b.review %></span></td>
+		</tbody>
+		<% end %>
+   </table>
+   </div>
+</div>
+
+<!-- 部分テンプレート用のcontainer締めのdiv -->
+</div>
+</div>
